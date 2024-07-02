@@ -54,3 +54,25 @@ let checking = new Point();
 checking.x = 1;
 checking.y = 2;
 checking.draw();
+
+//Constructor : Method called when we create an instance of the class.
+class NotPoint {
+  x: number;
+  y: number;
+
+  constructor(x?: number, y?: number) {
+    this.x = x !== undefined ? x : 0;
+    this.y = y !== undefined ? y : 0;
+  }
+
+  draw() {
+    console.log(`X: ${this.x}, Y: ${this.y}`);
+  }
+
+  getDistance() {
+    //...
+  }
+}
+
+let point = new NotPoint();
+point.draw();

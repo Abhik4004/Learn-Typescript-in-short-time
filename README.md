@@ -159,7 +159,42 @@ point.y = 2;
 point.draw();
 ```
 
-Classes encapsulate variables (fields) and functions (methods) to work with those variables.
+Optional Values in Classes encapsulate variables (fields) and functions (methods) to work with those variables.
+
+### 🏷️ Classes in TypeScript
+
+Introduction to classes, fields, and methods in TypeScript. Embrace the power of OOP!
+
+```typescript
+class NotPoint {
+  x: number;
+  y: number;
+
+  constructor(x?: number, y?: number) {
+    this.x = x !== undefined ? x : 0;
+    this.y = y !== undefined ? y : 0;
+  }
+
+  draw() {
+    console.log(`X: ${this.x}, Y: ${this.y}`);
+  }
+
+  getDistance() {
+    //...
+  }
+}
+
+let point1 = new NotPoint(1, 2);
+point1.draw();  // Output: X: 1, Y: 2
+
+let point2 = new NotPoint();
+point2.draw();  // Output: X: 0, Y: 0
+
+let point3 = new NotPoint(5);
+point3.draw();  // Output: X: 5, Y: 0
+```
+
+This example demonstrates how to make `x` and `y` optional in the constructor and handle default values if they are not provided. The `NotPoint` class encapsulates variables (`x` and `y`) and functions (`draw` and `getDistance`) to work with those variables.
 
 ---
 
