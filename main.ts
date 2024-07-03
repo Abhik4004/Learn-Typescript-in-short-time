@@ -1,3 +1,5 @@
+import { NotPoint } from "./point";
+
 let a: number;
 let b: boolean;
 let c: string;
@@ -37,18 +39,18 @@ let doLog = (msg: any) => {
 
 doLog(123);
 
-//Custom Types
-class Point {
-  x: number;
-  y: number;
-  draw() {
-    console.log(`X: ${this.x}, Y: ${this.y}`);
-  }
+// //Custom Types
+// class Point {
+//   x: number;
+//   y: number;
+//   draw() {
+//     console.log(`X: ${this.x}, Y: ${this.y}`);
+//   }
 
-  getDistance() {
-    //...
-  }
-}
+//   getDistance() {
+//     //...
+//   }
+// }
 
 let checking = new Point();
 checking.x = 1;
@@ -56,23 +58,9 @@ checking.y = 2;
 checking.draw();
 
 //Constructor : Method called when we create an instance of the class.
-class NotPoint {
-  x: number;
-  y: number;
 
-  constructor(x?: number, y?: number) {
-    this.x = x !== undefined ? x : 0;
-    this.y = y !== undefined ? y : 0;
-  }
-
-  draw() {
-    console.log(`X: ${this.x}, Y: ${this.y}`);
-  }
-
-  getDistance() {
-    //...
-  }
-}
-
-let point = new NotPoint();
-point.draw();
+let point = new NotPoint(1, 2);
+// point.setX(12);
+// let x = point.getX();
+// point.draw();
+let x: number = point.X;
