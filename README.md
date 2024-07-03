@@ -1,4 +1,3 @@
-````markdown
 # TypeScript Learning for Angular
 
 Hello everyone,
@@ -11,10 +10,9 @@ I am learning TypeScript for Angular and will be documenting all the knowledge I
 
 To install TypeScript globally using npm, run:
 
-```jsx
-$ npm install -g typescript
+```bash
+npm install -g typescript
 ```
-````
 
 ### 📝 Checking TypeScript Version
 
