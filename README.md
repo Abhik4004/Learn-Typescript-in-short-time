@@ -52,8 +52,6 @@ function doSomething() {
 doSomething();
 ```
 
-![Scope Example](https://prod-files-secure.s3.us-west-2.amazonaws.com/313735ab-d5d4-4f98-a8fa-9867d801f519/e6004fdf-b881-4b60-b9bf-4bcf00570b08/Untitled.png)
-
 Variables declared with `var` are scoped to the nearest function, while `let` is scoped to the nearest block of code.
 
 ### 📊 Different Data Types
